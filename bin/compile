@@ -23,7 +23,7 @@ if ! [ -e $BUILD_DIR/local/bin/cpanm ]; then
   echo "-----> Bootstrapping cpanm"
   which curl
   which perl
-  curl --silent https://raw.github.com/miyagawa/cpanminus/master/cpanm | perl - App::cpanminus
+  curl https://raw.github.com/miyagawa/cpanminus/master/cpanm | perl - App::cpanminus
 fi
 
 echo "-----> Installing dependencies"
